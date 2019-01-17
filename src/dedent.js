@@ -39,9 +39,9 @@ function dedent(
   }, Infinity);
 
   // Strip out minimum indent from every line.
-  const dedented = lines.map(line =>
+  const dedented = isFinite(minimum) ? lines.map(line =>
     line.replace(new RegExp(`^${' '.repeat(minimum)}`, 'g'), ''),
-  );
+  ) : lines;
 
   // Trim first and last line if empty.
   if (dedented[0] === '') {
