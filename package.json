@@ -1,0 +1,15 @@
+{
+  "name": "dented",
+  "version": "0.0.1",
+  "description": "Indenting and dedenting utilities",
+  "main": "src/index.js",
+  "files": [
+    "src/dedent.js",
+    "src/indent.js",
+    "src/index.js"
+  ],
+  "repository": "https://github.com/wincent/dented",
+  "author": "Greg Hurrell <greg@hurrell.net>",
+  "license": "MIT",
+  "private": false
+}
