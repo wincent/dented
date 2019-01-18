@@ -2,14 +2,22 @@
   "name": "dented",
   "version": "0.0.1",
   "description": "Indenting and dedenting utilities",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
-    "src/dedent.js",
-    "src/indent.js",
-    "src/index.js"
+    "lib/dedent.js",
+    "lib/indent.js",
+    "lib/index.js"
   ],
   "repository": "https://github.com/wincent/dented",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
   "author": "Greg Hurrell <greg@hurrell.net>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.2.3"
+  }
 }
